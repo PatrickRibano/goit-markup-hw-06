@@ -309,6 +309,16 @@ p.header-button {
     margin-bottom: 20px;
 }
 
+.input-policy span {
+    color: #4D5AE5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
 
 .sent-btn button {
     display: inline-flex;
