@@ -209,7 +209,7 @@ p.header-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 250ns cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -235,6 +235,95 @@ p.header-button {
     color: #4D5AE5;
     margin-left: auto;
     display: block;
+
+}
+
+.form-description {
+    font-size: 16px;
+}
+
+.service-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    color: #8E8F99;
+}
+
+.input-label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.service-input {
+    width: 80%;
+    padding: 12px 40px;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-icon {
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-icon:focus {
+    fill: #4D5AE5;
+}
+
+.service-input:focus + .service-icon,
+.service-input:hover + .service-icon {
+    fill: #4D5AE5;
+}
+
+.serive-input:hover {
+    fill: #4D5AE5;
+    border: 1px solid #4D5AE5;
+}
+
+.service-input-textarea{
+    border: 1px solid #2e2f42;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px;
+}
+
+.input-policy {
+    color: #8E8F99;
+    font-family: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    margin-bottom: 20px;
+}
+
+
+.sent-btn button {
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    margin-top: 24;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border: none;
 
 }
 
@@ -389,6 +478,7 @@ li.customer-icon:focus svg {
 section.footer-logo-description {
     margin-top: 10px;
     margin-left: 80px;
+
 }
 
 footer {
@@ -564,4 +654,62 @@ footer {
     background-color: #404BBF;
     position: relative;
     top: 20px;
+}
+
+.form-subscribe {
+    width: 264px;
+    height: 40px;
+    background-color: #2E2F42;
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+    
+}
+
+.input-subscribe {
+    width: 264px;
+    height: 40px;
+    background-color: #2E2F42;
+    border: none;
+    color: #FFFFFF;
+    align-items: center;
+    width: 100%;
+}
+
+.subscribe-btn {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.subscribe-btn span{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    background-color: #4D5AE5;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subcribe-icon {
+    fill: #FFFFFF;
+    padding: 10px 20px;
+}
+
+.subscribe-footer-btn {
+    background-color: #4D5AE5;
+    width: 165px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+}
+
+.section-subscribe {
+    display: flex;
+    margin: 20px 0;
 }
